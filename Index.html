@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ur">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>School Time Table - Class 6-10</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>🏫 سکول ٹائم ٹیبل - کلاس 6 تا 10</h1>
+  
+  <div class="form-box">
+    <select id="classSelect">
+      <option value="">کلاس سلیکٹ کریں</option>
+      <option>Class 6</option>
+      <option>Class 7</option>
+      <option>Class 8</option>
+      <option>Class 9</option>
+      <option>Class 10</option>
+    </select>
+    
+    <select id="daySelect">
+      <option value="">دن سلیکٹ کریں</option>
+      <option>پیر Monday</option>
+      <option>منگل Tuesday</option>
+      <option>بدھ Wednesday</option>
+      <option>جمعرات Thursday</option>
+      <option>جمعہ Friday</option>
+    </select>
+    
+    <select id="periodSelect">
+      <option value="">پیریڈ سلیکٹ کریں</option>
+      <option>1st Period - 8:00 to 8:40</option>
+      <option>2nd Period - 8:40 to 9:20</option>
+      <option>3rd Period - 9:20 to 10:00</option>
+      <option>4th Period - 10:00 to 10:40</option>
+      <option>5th Period - 10:40 to 11:20</option>
+      <option>6th Period - 11:20 to 12:00</option>
+      <option>7th Period - 12:00 to 12:40</option>
+      <option>8th Period - 12:40 to 1:20</option>
+    </select>
+    
+    <input type="text" id="subject" placeholder="مضمون کا نام - Math, English">
+    <input type="text" id="teacher" placeholder="استاد کا نام - Sir Ali">
+    
+    <button onclick="addEntry()">➕ شامل کریں</button>
+    <button onclick="printTable()" class="print-btn">🖨️ پرنٹ کریں</button>
+  </div>
+
+  <div id="timetable"></div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
